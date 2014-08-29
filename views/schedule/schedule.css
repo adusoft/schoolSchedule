@@ -1,0 +1,30 @@
+body {
+  font-family: Calibri;
+}
+
+.schedule tr td, .schedule tr th {
+  margin: 0;
+  padding: 10px 15px;
+}
+.schedule tr td {
+  border: 1px solid black;
+}
+
+.schedule tr th, .schedule tr td:first-child {
+  color: white;
+  background-color: black;
+}
+
+.lessons {
+  margin: 0;
+  padding: 0;
+}
+
+.lessons li {
+  list-style: none;
+  border: 2px #53a5f4 solid;
+  background-color: lightblue;
+  border-radius: 5px;
+  color: black;
+  padding: 3px 5px;
+}

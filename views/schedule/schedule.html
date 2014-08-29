@@ -1,0 +1,20 @@
+<table class="schedule">
+  <thead>
+  <tr>
+    <th>Dzień</th>
+    <th ng-repeat="lessonTime in lessonTimes">
+      {{lessonTime.start | date:'HH:mm'}} - {{lessonTime.end | date:'HH:mm'}}
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="dayName in dayNames">
+    <td>{{dayName}}</td>
+    <td ng-repeat="lessonTime in lessonTimes">
+      <ul class="lessons">
+        <li ng-repeat="lesson in getLessonFor($parent.$index, lessonTime.id)">{{lesson.name}}</li>
+      </ul>
+    </td>
+  </tr>
+  </tbody>
+</table>
